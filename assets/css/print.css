@@ -1,0 +1,88 @@
+﻿body {
+    background-image: none;
+    text-shadow: none;
+    background-color: #fff;
+}
+
+.print-friendly {
+    display: none;
+}
+
+.greetings .cover-image {
+    display: none;
+}
+
+.greetings .card {
+    top: 35px !important;
+}
+
+.greetings .card img {
+    display: none;
+}
+
+#content {
+    margin-top: 0;
+}
+
+#content .wrapper {
+    margin-top: 0;
+}
+
+#top-navigation {
+    display: none;
+}
+
+#activity li, #resume li, .main-section {
+    border-color: #fff;
+}
+
+#activity li.item .timestamp,
+#resume li.section .name {
+    position: relative;
+    border: none;
+    background-color: #fff;
+    box-shadow: none;
+    color: #979797;
+}
+
+#resume li {
+    margin-bottom: 25px;
+}
+
+#resume li.section .section-content h1 {
+    padding-left: 0;
+    margin-left: -2px;
+}
+
+#resume li.section.separated {
+    border-top: none !important;
+}
+
+#resume li.section .name {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: none;
+    color: #5F5F5F;
+    width: auto;
+    text-align: left !important;
+    left: 0 !important;
+    margin-left: 0;
+}
+
+#resume li.section:first-child {
+    margin-top: 20px;
+}
+
+#resume li.section:first-child .name {
+    display: none;
+}
+
+#activity li.item .timestamp div {
+    display: inline;
+}
+
+#activity li.item .item-content,
+#resume li.section .section-content {
+    margin-left: 0;
+    margin-right: 0;
+}
