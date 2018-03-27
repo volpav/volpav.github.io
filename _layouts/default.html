@@ -29,12 +29,14 @@
         <header>
             <nav id="top-navigation">
                 <ul>
-                    <li><a href="/">blog</a></li>
+                    <li><a href="/">home</a></li>
                     <li><a href="/resume">resume</a></li>
                     <li><a href="/contact">contact</a></li>
                 </ul>
                 <div class="clear"></div>
             </nav>
+
+            {{ page.header }}
         </header>
 
         <div id="content">
@@ -47,7 +49,7 @@
             </div>
         </div>
 
-        <script type="text/javascript">
+        <script>
             var _gaq = _gaq || [];
 
             _gaq.push(['_setAccount', 'UA-39164659-1']);
@@ -58,7 +60,6 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-
         </script>
     </body>
 </html>

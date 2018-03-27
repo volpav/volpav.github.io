@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<a name="top"></a>
+
+<article>
+    <ul id="activity" class="activity-list">
+        {% for post in site.posts %}
+        <li class="clear item item-blogentry">
+            <div class="item-content">
+                <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+
+                <div class="item-metadata">
+                    <span><time class="fact" datetime="{{ post.date }}">{{ post.date | date_to_long_string }}</time></span>
+                </div>
+
+                {{ post.content | truncatewords: 45 }}
+
+                <p class="continue-reading"><a href="{{ post.url }}">Continue reading</a></p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</article>

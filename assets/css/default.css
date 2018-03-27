@@ -201,7 +201,7 @@ body {
     padding: 0;
     margin-left: -1px;
 
-    background: url('/Content/Images/cover.jpg') no-repeat center center; 
+    background: url('/assets/img/cover.jpg') no-repeat center center; 
     background-size: cover;
 }
 
