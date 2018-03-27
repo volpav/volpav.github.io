@@ -1,5 +1,8 @@
 exclude: ["CNAME", "README.md"]
 markdown: kramdown
-name: Pavel Volgarev
+title: Pavel Volgarev
 description: Pavel Volgarev - personal website and blog.
 url: https://volgarev.me
+
+plugins:
+  - jekyll-redirect-from
