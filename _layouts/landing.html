@@ -14,10 +14,6 @@ layout: default
                 <div class="item-metadata">
                     <span><time class="fact" datetime="{{ post.date }}">{{ post.date | date_to_long_string }}</time></span>
                 </div>
-
-                {{ post.content | truncatewords: 45 }}
-
-                <p class="continue-reading"><a href="{{ post.url }}">Continue reading</a></p>
             </div>
         </li>
         {% endfor %}

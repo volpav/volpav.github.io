@@ -292,12 +292,12 @@ body {
     overflow: hidden;
 }
 
-#resume li {
-    margin-bottom: 0;
+#activity li {
+    margin-bottom: 40px;
 }
 
-.item-content .share-buttons {
-    margin-bottom: 20px;
+#resume li {
+    margin-bottom: 0;
 }
 
 .item-content .gist {
@@ -365,6 +365,11 @@ body {
 #activity li.item .item-content h1 {
     font-size: 34px;
     font-weight: bold;
+}
+
+#activity li.item a.title {
+    font-weight: normal;
+    font-size: 24px;
 }
 
 #resume li.section .name {
