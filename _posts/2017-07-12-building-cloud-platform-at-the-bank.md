@@ -61,7 +61,6 @@ The active work on building the platform started in December, 2016 and by mid-Ma
 - Comprehensive onboarding and training process and a team of engineers ready to help;
 - Validation that what we imagined when we started this journey is possible and that this company is truly committed to transform itself technologically;
 
-
 ![Celebration](/assets/img/articles/celebration.jpg)
 
 (on the picture above: celebrating first application's production launch)
