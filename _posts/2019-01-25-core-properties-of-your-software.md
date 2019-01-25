@@ -17,23 +17,30 @@ When deciding on intrinsic characteristics of a software system it’s sometimes
 
 Here are some items that I try to keep in mind when going through design phase:
 
-- **Correctness**<br />
-This might surprise you but sometimes it’s enough for your software to be only approximately correct. For example, sometimes having highly-performant program which gives correct results in 80% of all cases is much-more desirable than having a slow program which is correct 90% of the time.<br /><br />
-- **Security**<br />
-  Do we store sensitive user data that we need to protect? Do we need to require authentication to access certain parts of the system? Are there different types of users that we need to treat differently? Do we need extra security given how we distribute our software (e.g. a mobile app which is on user’s device)?<br /><br />
-- **Performance**<br />
-Everyone likes it when software runs fast but sometimes you need to prioritize other things over raw performance. What is the nature of operations our program is performing? Should we optimize for reads or writes? Do we need to think about improving perceived performance (i.e. parts of the screen loading independently which allows the user to interact with an app before things fully load)?<br /><br />
-- **Scalability**<br />
-Related to performance, here you’d want to understand how you’re going to handle increasing system load (which might be based on the volume of requests, input/output data size, etc.). When we reason about approaches to scalability, often we consider horizontal (have more machines) and vertical (have more resources on each individual machine) scalability as some of the quick wins that can be taken.<br /><br />
-- **Portability**<br />
-Do we need to support multiple platforms (e.g. PlayStation and Xbox for games)? If the new platform is released tomorrow, should we be ready to support it (e.g. a new mobile operating system)?<br /><br />
-- **Simplicity**<br />
-Here it’s useful to think about the “cost of change” as a measure of how complex, time-consuming and risky it would be to introduce new changes to the system. When talking about user interfaces, we may want to choose one UI framework over another simply because it’s easier to use it (although, it might not be as powerful) and we have good knowledge around it. When looking at the back end, loose coupling and fine-grained components help with this quite a bit.<br /><br />
-- **Extensibility**<br />
-Here the main question is usually: should we allow altering functionality of our software with the logic that has not originated from our software (e.g. plugins and various extensions that take advantage of multiple extensibility points)? Depending on the degree of extensibility you may end-up with quite complex system so watch out for this one.<br /><br />
-- **Accessibility**<br />
-This is more applicable to user interfaces and behaviors. It's often a good idea to ensure your software is accessible to various categories of users (e.g. people with disabilities). Although, sometimes you might be designing something that is targeting a very specific persona (e.g. building a sonar with haptic feedback to help visually-impaired people navigate their surroundings).<br /><br />
-- **Safety**<br />
+### Correctness
+This might surprise you but sometimes it’s enough for your software to be only approximately correct. For example, sometimes having highly-performant program which gives correct results in 80% of all cases is much-more desirable than having a slow program which is correct 90% of the time.
+
+### Security
+Do we store sensitive user data that we need to protect? Do we need to require authentication to access certain parts of the system? Are there different types of users that we need to treat differently? Do we need extra security given how we distribute our software (e.g. a mobile app which is on user’s device)?
+
+### Performance
+Everyone likes it when software runs fast but sometimes you need to prioritize other things over raw performance. What is the nature of operations our program is performing? Should we optimize for reads or writes? Do we need to think about improving perceived performance (i.e. parts of the screen loading independently which allows the user to interact with an app before things fully load)?
+
+### Scalability
+Related to performance, here you’d want to understand how you’re going to handle increasing system load (which might be based on the volume of requests, input/output data size, etc.). When we reason about approaches to scalability, often we consider horizontal (have more machines) and vertical (have more resources on each individual machine) scalability as some of the quick wins that can be taken.
+### Portability
+Do we need to support multiple platforms (e.g. PlayStation and Xbox for games)? If the new platform is released tomorrow, should we be ready to support it (e.g. a new mobile operating system)?
+
+### Simplicity
+Here it’s useful to think about the “cost of change” as a measure of how complex, time-consuming and risky it would be to introduce new changes to the system. When talking about user interfaces, we may want to choose one UI framework over another simply because it’s easier to use it (although, it might not be as powerful) and we have good knowledge around it. When looking at the back end, loose coupling and fine-grained components help with this quite a bit.
+
+### Extensibility
+Here the main question is usually: should we allow altering functionality of our software with the logic that has not originated from our software (e.g. plugins and various extensions that take advantage of multiple extensibility points)? Depending on the degree of extensibility you may end-up with quite complex system so watch out for this one.
+
+### Accessibility
+This is more applicable to user interfaces and behaviors. It's often a good idea to ensure your software is accessible to various categories of users (e.g. people with disabilities). Although, sometimes you might be designing something that is targeting a very specific persona (e.g. building a sonar with haptic feedback to help visually-impaired people navigate their surroundings).
+
+### Safety
 In some cases you need to perform extra due diligence to ensure your software is safe for people to use. For example, when designing a program that controls an industrial press machine, you probably want to ensure an operator can’t accidentally activate it (which, in turn, may cause damage to other hardware or an injury to a coworker).
 
 Hope this helps. If you have any questions, feel free to ping me on Twitter ([@volpav](https://twitter.com/volpav)).
