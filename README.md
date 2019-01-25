@@ -1,9 +1,8 @@
-# volpav.github.io
-My personal website.
+# Pavel's Blog
+My personal website and blog located at https://volgarev.me
 
 ## Running Locally
 
     bundle exec jekyll serve
-
-After that, visit http://127.0.0.1:4000 
+    chrome-browser http://127.0.0.1:4000
 
